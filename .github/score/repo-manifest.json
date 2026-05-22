@@ -1,19 +1,13 @@
 {
-  "$schema": "../references/repo-manifest.schema.json",
   "version": 1,
   "repository": {
     "name": "mcp-servers",
-    "language": "python",
-    "visibility": "public",
-    "tags": [
-      "mcp",
-      "developer-tooling",
-      "agent-infrastructure"
-    ]
+    "language": "Python",
+    "visibility": "public"
   },
   "bootstrap": {
     "contract_version": "v0.1.0",
-    "template_version": "v0.1.0"
+    "template_source": "https://github.com/eclipse-score/.github"
   },
   "execution": {
     "build": {
@@ -24,18 +18,6 @@
     },
     "lint": {
       "command": "uv run ruff check src/ tests/"
-    },
-    "typecheck": {
-      "command": "uv run basedpyright src/"
     }
-  },
-  "mcp": {
-    "server_name": "score-mcp-server",
-    "tools": [
-      "build",
-      "test",
-      "lint",
-      "typecheck"
-    ]
   }
 }
