@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.pyright/
+.venv/
+dist/
+build/
+apm_modules/
+apm.lock.yaml
+
+# Compiled agent output
+.claude/
+.claude-plugin/
+.agents/
+.github/plugin/
+**/.github/plugin/
+.codex/
+.copilot/
+.cursor/
+.gemini/
+.continue/
+.opencode/
+
+# Local tooling
+.DS_Store
